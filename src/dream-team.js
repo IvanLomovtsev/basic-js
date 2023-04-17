@@ -17,7 +17,7 @@ function createDreamTeam(members) {
   let arr=[];
   members.forEach(el=>{
     if (typeof(el)==='string') {
-      let letter = el.slice(0, 1);
+      let letter = el.trim().slice(0, 1).toUpperCase();
       arr.push(letter);
     }
   })
